@@ -31,6 +31,7 @@ body{
 .CorpoDaPagina{
     margin-top: 120px;
     padding-left: 20px;
+    margin-bottom: 110px;
 }
 .titulo{
     font-family: 'Righteous', cursive;
@@ -42,7 +43,6 @@ body{
 }
 .opcoes{
     height: 215px;
-    background-color: blue;
     margin-top: 17px;
     display: flex;
     justify-content: space-between;
@@ -53,6 +53,7 @@ img{
     width: 144px;
     height: 87px;
     border-radius: 4px;
+    margin: 0 14px;
 }
 .comida{
     font-weight: 700;
@@ -74,9 +75,10 @@ img{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #333333;
+    color: #000000;
     align-self: flex-start ;
     margin-left: 15px;
+    
 }
 .pedido{
     background-color: #FFFFFF;
@@ -90,4 +92,28 @@ img{
     box-sizing: border-box;
     padding: 15px 0;
     margin-right: 20px;
+    box-shadow: 0px 0px 10px -4px #00000040;
+}
+.footer{
+    height: 92px;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #CBCBCB;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: Center;
+    color: #FFFFFF;
+    border: none;
 }
