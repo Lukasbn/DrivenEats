@@ -30,7 +30,6 @@ body{
 }
 .CorpoDaPagina{
     margin-top: 120px;
-    padding-left: 20px;
     margin-bottom: 110px;
 }
 .titulo{
@@ -40,6 +39,7 @@ body{
     line-height: 32px;
     color: #333333;
     margin-top: 25px;
+    margin-left: 20px;
 }
 .opcoes{
     height: 215px;
@@ -47,7 +47,7 @@ body{
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
-
+    margin-left: 20px;
 }
 img{
     width: 144px;
@@ -78,7 +78,9 @@ img{
     color: #000000;
     align-self: flex-start ;
     margin-left: 15px;
-    
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
 }
 .pedido{
     background-color: #FFFFFF;
@@ -116,4 +118,17 @@ button{
     text-align: Center;
     color: #FFFFFF;
     border: none;
+}
+.selecionado{
+    box-shadow: 0px 0px 0px 5px #32B72F inset;
+}
+.selecionado ion-icon{
+    color:#32B72F;
+}
+ion-icon{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.habilitado{
+    background-color: #32B72F;
 }

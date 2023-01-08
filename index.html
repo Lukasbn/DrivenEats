@@ -1,139 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>DrivenEats</title>
-</head>
-<body>
-    <div class="menu">
-        <div>DrivenEats</div>
-        <div>Sua comida em 6 minutos</div>
-    </div>
-    <div class="CorpoDaPagina">
-        <div class="principal">
-            <div class="titulo">Primeiro, seu prato</div>
-            <div class="opcoes">
-                <div class="pedido" data-test="dish">
-                    <img src="img/frango_yin_yang.png">
-                    <div class="comida" data-test="item-name">Frango Yin Yang</div>
-                    <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
-                    <div class="preço" data-test="item-price">R$ 14,90</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>DrivenEats</title>
+    </head>
+    <body>
+        <div class="menu">
+            <div>DrivenEats</div>
+            <div>Sua comida em 6 minutos</div>
+        </div>
+        <div class="CorpoDaPagina">
+            <div class="principal">
+                <div class="titulo">Primeiro, seu prato</div>
+                <div class="opcoes">
+                    <div onclick="SelecionarComida(this)" class="pedido" data-test="dish">
+                        <img src="img/frango_yin_yang.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Frango Yin Yang</div>
+                        <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>14,99</span></div>  <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarComida(this)" class="pedido" data-test="dish">
+                        <img src="img/frango_yin_yang.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Carne Yin Yang</div>
+                        <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>15,99</span></div> <ion-icon name="checkmark-circle"></div>
+                    </div>
+                    <div onclick="SelecionarComida(this)" class="pedido" data-test="dish">
+                        <img src="img/frango_yin_yang.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Peixe Yin Yang</div>
+                        <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>13,99</span></div> <ion-icon name="checkmark-circle"></div>
+                    </div>
+                    <div onclick="SelecionarComida(this)" class="pedido" data-test="dish">
+                        <img src="img/frango_yin_yang.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Frango Yin Yang</div>
+                        <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>16,99</span></div> <ion-icon name="checkmark-circle"></div>
+                    </div>
+                    <div onclick="SelecionarComida(this)" class="pedido" data-test="dish">
+                        <img src="img/frango_yin_yang.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Frango Yin Yang</div>
+                        <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>12,99</span></div> <ion-icon name="checkmark-circle"></div>
+                    </div>
+                    <div onclick="SelecionarComida(this)" class="pedido" data-test="dish">
+                        <img src="img/frango_yin_yang.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Frango Yin Yang</div>
+                        <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>17,99</span></div> <ion-icon name="checkmark-circle"></div>
+                    </div>
                 </div>
-                <div class="pedido" data-test="dish">
-                    <img src="img/frango_yin_yang.png">
-                    <div class="comida" data-test="item-name">Frango Yin Yang</div>
-                    <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
-                    <div class="preço" data-test="item-price">R$ 14,90</div>
+            </div>
+            <div class="bebida">
+                <div class="titulo">Agora, sua bebida</div>
+                <div class="opcoes">
+                    <div onclick="SelecionarBebida(this)" class="pedido" data-test="drink">
+                        <img src="img/coca-cola.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Coquinha gelada</div>
+                        <div class="ingredientes">Lata 350ml</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>4,50</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarBebida(this)" class="pedido" data-test="drink">
+                        <img src="img/coca-cola.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Guaraná delícia</div>
+                        <div class="ingredientes">Lata 350ml</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>3,50</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarBebida(this)" class="pedido" data-test="drink">
+                        <img src="img/coca-cola.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Coquinha gelada</div>
+                        <div class="ingredientes">Lata 350ml</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>5,50</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarBebida(this)" class="pedido" data-test="drink">
+                        <img src="img/coca-cola.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Coquinha gelada</div>
+                        <div class="ingredientes">Lata 350ml</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>2,50</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarBebida(this)" class="pedido" data-test="drink">
+                        <img src="img/coca-cola.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Coquinha gelada</div>
+                        <div class="ingredientes">Lata 350ml</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>6,50</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    
                 </div>
-                <div class="pedido" data-test="dish">
-                    <img src="img/frango_yin_yang.png">
-                    <div class="comida" data-test="item-name">Frango Yin Yang</div>
-                    <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
-                    <div class="preço" data-test="item-price">R$ 14,90</div>
-                </div>
-                <div class="pedido" data-test="dish">
-                    <img src="img/frango_yin_yang.png">
-                    <div class="comida" data-test="item-name">Frango Yin Yang</div>
-                    <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
-                    <div class="preço" data-test="item-price">R$ 14,90</div>
-                </div>
-                <div class="pedido" data-test="dish">
-                    <img src="img/frango_yin_yang.png">
-                    <div class="comida" data-test="item-name">Frango Yin Yang</div>
-                    <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
-                    <div class="preço" data-test="item-price">R$ 14,90</div>
-                </div>
-                <div class="pedido" data-test="dish">
-                    <img src="img/frango_yin_yang.png">
-                    <div class="comida" data-test="item-name">Frango Yin Yang</div>
-                    <div class="ingredientes">Um pouco de batata, um pouco de salada</div>
-                    <div class="preço" data-test="item-price">R$ 14,90</div>
+            </div>
+            <div class="sobremesa">
+                <div class="titulo">Por fim, sua sobremesa</div>
+                <div class="opcoes">
+                    <div onclick="SelecionarSobremesa(this)" class="pedido" data-test="dessert">
+                        <img src="img/pudim.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Pudim</div>
+                        <div class="ingredientes">Apenas pudim</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>7,25</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarSobremesa(this)" class="pedido" data-test="dessert">
+                        <img src="img/pudim.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Maria-mole</div>
+                        <div class="ingredientes">Apenas pudim</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>8,25</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarSobremesa(this)" class="pedido" data-test="dessert">
+                        <img src="img/pudim.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Pudim</div>
+                        <div class="ingredientes">Apenas pudim</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>9,25</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarSobremesa(this)" class="pedido" data-test="dessert">
+                        <img src="img/pudim.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Pudim</div>
+                        <div class="ingredientes">Apenas pudim</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>10,25</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    <div onclick="SelecionarSobremesa(this)" class="pedido" data-test="dessert">
+                        <img src="img/pudim.png" alt="A imagem não foi encontrada">
+                        <div class="comida" data-test="item-name">Pudim</div>
+                        <div class="ingredientes">Apenas pudim</div>
+                        <div class="preço" data-test="item-price"><div>R$ <span>11,25</span></div> <ion-icon name="checkmark-circle"></ion-icon></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="bebida">
-            <div class="titulo">Agora, sua bebida</div>
-            <div class="opcoes">
-                <div class="pedido" data-test="drink">
-                    <img src="img/coca-cola.png">
-                    <div class="comida" data-test="item-name">Coquinha gelada</div>
-                    <div class="ingredientes">Lata 350ml</div>
-                    <div class="preço" data-test="item-price">R$ 4,90</div>
-                </div>
-                <div class="pedido" data-test="drink">
-                    <img src="img/coca-cola.png">
-                    <div class="comida" data-test="item-name">Coquinha gelada</div>
-                    <div class="ingredientes">Lata 350ml</div>
-                    <div class="preço" data-test="item-price">R$ 4,90</div>
-                </div>
-                <div class="pedido" data-test="drink">
-                    <img src="img/coca-cola.png">
-                    <div class="comida" data-test="item-name">Coquinha gelada</div>
-                    <div class="ingredientes">Lata 350ml</div>
-                    <div class="preço" data-test="item-price">R$ 4,90</div>
-                </div>
-                <div class="pedido" data-test="drink">
-                    <img src="img/coca-cola.png">
-                    <div class="comida" data-test="item-name">Coquinha gelada</div>
-                    <div class="ingredientes">Lata 350ml</div>
-                    <div class="preço" data-test="item-price">R$ 4,90</div>
-                </div>
-                <div class="pedido" data-test="drink">
-                    <img src="img/coca-cola.png">
-                    <div class="comida" data-test="item-name">Coquinha gelada</div>
-                    <div class="ingredientes">Lata 350ml</div>
-                    <div class="preço" data-test="item-price">R$ 4,90</div>
-                </div>
-                
-            </div>
+        <div class="footer">
+            <button data-test="order-btn" disabled>Selecione os 3 itens para fechar o pedido</button>
         </div>
-        <div class="sobremesa">
-            <div class="titulo">Por fim, sua sobremesa</div>
-            <div class="opcoes">
-                <div class="pedido" data-test="dessert">
-                    <img src="img/pudim.png">
-                    <div class="comida" data-test="item-name">Pudim</div>
-                    <div class="ingredientes">Apenas pudim</div>
-                    <div class="preço" data-test="item-price">R$ 7,90</div>
-                </div>
-                <div class="pedido" data-test="dessert">
-                    <img src="img/pudim.png">
-                    <div class="comida" data-test="item-name">Pudim</div>
-                    <div class="ingredientes">Apenas pudim</div>
-                    <div class="preço" data-test="item-price">R$ 7,90</div>
-                </div>
-                <div class="pedido" data-test="dessert">
-                    <img src="img/pudim.png">
-                    <div class="comida" data-test="item-name">Pudim</div>
-                    <div class="ingredientes">Apenas pudim</div>
-                    <div class="preço" data-test="item-price">R$ 7,90</div>
-                </div>
-                <div class="pedido" data-test="dessert">
-                    <img src="img/pudim.png">
-                    <div class="comida" data-test="item-name">Pudim</div>
-                    <div class="ingredientes">Apenas pudim</div>
-                    <div class="preço" data-test="item-price">R$ 7,90</div>
-                </div>
-                <div class="pedido" data-test="dessert">
-                    <img src="img/pudim.png">
-                    <div class="comida" data-test="item-name">Pudim</div>
-                    <div class="ingredientes">Apenas pudim</div>
-                    <div class="preço" data-test="item-price">R$ 7,90</div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <button >Selecione os 3 itens para fechar o pedido</button>
-    </div>
-</body>
-<script src="script.js"></script>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
 </html>
