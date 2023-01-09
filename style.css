@@ -47,6 +47,8 @@ body{
     display: flex;
     justify-content: space-between;
     overflow-x: scroll;
+}
+.opcoes div:first-child{
     margin-left: 20px;
 }
 img{
