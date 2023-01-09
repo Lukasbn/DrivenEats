@@ -1,21 +1,17 @@
-let prato
-let drink
-let doce
-let preçoC
-let preçoB
-let preçoS
+let prato;
+let drink;
+let doce;
+let precoC;
+let precoB;
+let precoS;
 function SelecionarComida(Cselcionada){
     const JaSelecionda = document.querySelector(".principal .selecionado");
     if ((JaSelecionda !== null ) & (JaSelecionda !== Cselcionada)){
         JaSelecionda.classList.remove("selecionado");
     }
-
     Cselcionada.classList.add("selecionado");
-
     prato = document.querySelector(".principal .selecionado .comida").innerHTML;
-
-    preçoC = document.querySelector(".principal .selecionado .preço span").innerHTML
-
+    precoC = document.querySelector(".principal .selecionado .preço span").innerHTML;
     HabilitarBotao();
 }
 function SelecionarBebida(Bselcionada){
@@ -23,27 +19,19 @@ function SelecionarBebida(Bselcionada){
     if ((JaSelecionda !== null ) & (JaSelecionda !== Bselcionada)){
         JaSelecionda.classList.remove("selecionado");
     }
-
     Bselcionada.classList.add("selecionado");
-
     drink = document.querySelector(".bebida .selecionado .comida").innerHTML;
-
-    preçoB = document.querySelector(".bebida .selecionado .preço span").innerHTML
-
+    precoB = document.querySelector(".bebida .selecionado .preço span").innerHTML;
     HabilitarBotao();
 }
 function SelecionarSobremesa(Sselcionada){
     const JaSelecionda = document.querySelector(".sobremesa .selecionado");
     if ((JaSelecionda !== null ) & (JaSelecionda !== Sselcionada)){
-        JaSelecionda.classList.remove("selecionado")
+        JaSelecionda.classList.remove("selecionado");
     }
-
     Sselcionada.classList.add("selecionado")
-
     doce = document.querySelector(".sobremesa .selecionado .comida").innerHTML;
-
-    preçoS = document.querySelector(".sobremesa .selecionado .preço span").innerHTML
-
+    precoS = document.querySelector(".sobremesa .selecionado .preço span").innerHTML;
     HabilitarBotao()
 }
 function HabilitarBotao(){
@@ -51,19 +39,21 @@ function HabilitarBotao(){
         if ((drink!==null) & (drink!==undefined)) {
             if ((doce!==null) & (doce!==undefined)) {
                 const botão = document.querySelector("button");
-
                 botão.classList.add("habilitado");
-                
                 botão.removeAttribute("disabled");
-
                 botão.innerHTML = "Fechar pedido";
-
-                console.log(preçoC);
-                console.log(preçoB);
-                console.log(preçoS);
             }
-    
         }
-        
     }
+}
+function BotaoClicado(){
+    let total = (Number(precoB.replace(",","."))+Number(precoC.replace(",","."))+Number(precoS.replace(",","."))).toFixed(2)
+    const texto = ("Olá, gostaria de fazer o pedido:" + "\n" +
+        "- Prato: " + prato + "\n" +
+        "- Bebida: " + drink + "\n" +
+        "- Sobremesa: " + doce + "\n" +
+        "Total: R$ " + total);
+    const link = encodeURIComponent(texto)
+    window.open(`https://wa.me/+55999999999?text=${encodeURIComponent(texto)}`)
+        
 }
